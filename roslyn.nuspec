@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Roslyn452Repacked</id>
+        <version>$version$</version>
+        <authors>M.Rybnikov</authors>
+        <owners>M.Rybnikov</owners>
+        <projectUrl>https://github.com/mihasic/roslyn452repacked</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Roslyn for 4.5.2 packed for nuget 2.8.6</title>
+        <description>
+            Since Microsoft.CodeAnalysis depends on System.Reflection.Metadata and the later
+            can not be installed with nuget 2.8.6, I've repacked it into a single package. 
+        </description>
+        <tags>roslyn net452</tags>
+        <frameworkAssemblies />
+        <releaseNotes/>
+        <dependencies>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="artifacts\*.*" target="lib\net45" />
+    </files>
+</package>
